@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sundeep Y | Software Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        :root {
+            --bg-color: #121212;
+            --text-color: #fff;
+            --card-bg: rgba(255, 255, 255, 0.1);
+            --btn-color: #0073e6;
+        }
+        body.light-mode {
+            --bg-color: #f4f4f4;
+            --text-color: #333;
+            --card-bg: rgba(0, 0, 0, 0.05);
+            --btn-color: #005bb5;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        body { background: var(--bg-color); color: var(--text-color); transition: 0.5s; }
+        .container { max-width: 900px; margin: 50px auto; padding: 30px; text-align: center; border-radius: 10px; }
+        h1 { font-size: 36px; color: var(--btn-color); }
+        h2 { font-size: 24px; margin-top: 20px; color: var(--btn-color); }
+        p { font-size: 16px; line-height: 1.6; }
+        .section { padding: 20px; margin-top: 20px; background: var(--card-bg); border-radius: 8px; backdrop-filter: blur(10px); }
+        .contact a { text-decoration: none; color: var(--btn-color); font-weight: 600; transition: 0.3s; }
+        .contact a:hover { color: #00bcd4; }
+        .btn { display: inline-block; margin-top: 20px; padding: 12px 24px; background: var(--btn-color); color: white; border-radius: 6px; text-decoration: none; transition: 0.3s; font-weight: bold; }
+        .btn:hover { background: #005bb5; }
+        .toggle-btn { position: fixed; top: 20px; right: 20px; background: var(--btn-color); color: white; padding: 10px 16px; border-radius: 20px; cursor: pointer; font-size: 16px; transition: 0.3s; }
+        .toggle-btn:hover { background: #005bb5; }
+        .resume-btn { margin-top: 10px; }
+        .skill-bar { background: var(--card-bg); border-radius: 6px; margin: 10px 0; position: relative; height: 10px; }
+        .skill-fill { height: 100%; background: var(--btn-color); border-radius: 6px; animation: fillSkill 2s ease-in-out; }
+        @keyframes fillSkill { from { width: 0%; } to { width: 100%; } }
+    </style>
+</head>
+<body>
+
+    <button class="toggle-btn" onclick="toggleDarkMode()">🌙 Toggle Mode</button>
+
+    <div class="container">
+        <h1>Sundeep Yarrabothu</h1>
+        <p><strong>Software Engineer | Full Stack Developer</strong></p>
+        <p>Experienced in Java, Spring Boot, Microservices, ReactJS, AWS, and DevOps tools.</p>
+
+        <a href="/Users/sundeepyarrabothu/Desktop/Sundeep_Y_Resume.pdf" download class="btn resume-btn">📄 Download Resume</a>
+
+        <div class="section skills">
+            <h2>Skills</h2>
+            <p>Java, Python, JavaScript, Spring Boot, Microservices, Angular, React, AWS, Azure, Docker, Kubernetes, Jenkins</p>
+            <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
+        </div>
+
+        <div class="section experience">
+            <h2>Work Experience</h2>
+            <p><strong>Software Engineer</strong> - Saika Technologies Inc (Fannie Mae)</p>
+            <div class="skill-bar"><div class="skill-fill" style="width: 95%;"></div></div>
+            <p><strong>Java Full Stack Engineer</strong> - Becton Dickinson</p>
+            <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
+            <p><strong>Software Developer</strong> - HARMAN Connected Services (Mercedes-Benz)</p>
+            <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div>
+        </div>
+
+        <div class="section projects">
+            <h2>Projects</h2>
+            <p>🏡 Home Loan Underwriting | 🛒 BD E-commerce Platform | 🚗 Mercedes-Benz E-commerce</p>
+        </div>
+
+        <div class="contact">
+            <p>📧 sundeepytech@gmail.com | 📍 Irving, TX</p>
+            <p>
+                <a href="https://github.com/sundeepyarrabothu" target="_blank"><i class="fab fa-github"></i> GitHub</a> |
+                <a href="https://linkedin.com/in/sundeep-y-6b7344132
+
+" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </p>
+        </div>
+
+        <a href="mailto:sundeepytech@gmail.com" class="btn">Contact Me</a>
+    </div>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('light-mode');
+        }
+    </script>
+
+</body>
+</html>
